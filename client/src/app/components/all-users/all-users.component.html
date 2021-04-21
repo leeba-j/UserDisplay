@@ -1,1 +1,5 @@
-<p>all-users works!</p>
+<h1 (click)="getAllUsers()"> Users</h1>
+
+<div *ngFor="let item of userNames" class="container">
+    <div class="users">{{item.name}}</div>
+</div>
