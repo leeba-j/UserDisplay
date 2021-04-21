@@ -1,5 +1,8 @@
-<h1 (click)="getAllUsers()"> Users</h1>
+<h1 > Users</h1>
 
-<div *ngFor="let item of userNames" class="container">
-    <div class="users">{{item.name}}</div>
+<div class="container">
+    <div *ngFor="let item of userNames"  class="users">
+       <h3> {{item.name}}</h3>
+        <button  type="button" class="btn btn-outline-info btn-sm" (click)="getOneUser(item.id)" >View More</button>
+    </div>
 </div>

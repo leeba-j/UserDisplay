@@ -13,4 +13,9 @@ export class UsersService {
   allUsers(){
    return this.http.get(this.API_URL);
   }
+
+  oneUser(id:any){
+    return this.http.get(this.API_URL+`/${id}`);
+
+  }
 }

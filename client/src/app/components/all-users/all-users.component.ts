@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UsersService } from 'src/app/services/users.service';
 
 @Component({
@@ -8,16 +9,21 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class AllUsersComponent implements OnInit {
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService, private router: Router) { }
   userNames: any = new Array();
   ngOnInit(): void {
-    this.usersService.allUsers().subscribe(data => { 
-      this.userNames = data;
-    })
+    this.getAllUsers();
+  
   }
 
-  //Get all the users
-   getAllUsers(){
+  //This method gets all the users
+   public getAllUsers():void{
+    this.usersService.allUsers().subscribe(data => { 
+      this.userNames = data;
+    });
+  }
 
+  public getOneUser(id:any): void{
+    this.router.navigate([`/user/${id}`]);
   }
 }

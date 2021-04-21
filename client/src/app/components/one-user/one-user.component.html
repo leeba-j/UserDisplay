@@ -1,1 +1,15 @@
-<p>one-user works!</p>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">User</a>
+    </div>
+  </nav>
+<div  *ngIf="selectedUser" class="container">
+    <div  class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{selectedUser.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{selectedUser.email}}</h6>
+         
+        </div>
+      </div>
+</div>
+

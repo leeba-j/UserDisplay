@@ -5,8 +5,9 @@ import { OneUserComponent } from './components/one-user/one-user.component';
 
 const routes: Routes = [
   { path: 'users', component: AllUsersComponent },
-  { path: '***', pathMatch: 'full', component: AllUsersComponent },
   { path: 'user/:id', component: OneUserComponent },
+  { path: '**', pathMatch: 'full', component: AllUsersComponent },
+
 ];
 
 @NgModule({
