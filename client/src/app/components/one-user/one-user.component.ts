@@ -16,6 +16,6 @@ export class OneUserComponent implements OnInit {
   }
 getSelectedUser(){
   let id = this.activatedRoute.snapshot.paramMap.get("id")
-  this.usersService.oneUser(id).subscribe(data => this.selectedUser = data)
+  this.usersService.oneUser(id).subscribe(data => {this.selectedUser = data})
 }
 }

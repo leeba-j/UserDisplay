@@ -1,27 +1,36 @@
-# Client
+# **Components**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+*You will find a Full Stack Token Authentication component built with Django Rest Framework and Angular 11 which you can use anytime on your app*
 
-## Development server
+#
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## **Prerequisites**
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Node & NPM**
+	- `NodeJS v14.15.1`
+	- `npm 7.5.6`
+	- `Angular CLI 11.0.4`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+*NB: If you have not installed `NodeJS` on your machine please visit the [NodeJS Official Site](https://nodejs.org/en/), download and set it up*
 
-## Running unit tests
+#
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## ***Project Setup***
 
-## Running end-to-end tests
+1. **_Clone this project to your desired directory._**
+2. **_Install [NodeJS](https://nodejs.org/en/)._**
+3. **_Open another terminal and navigate to --> cloned project directory --> client directory, then run the following command:_**
+	- **_`npm install`_**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+#
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ***Running the project***
+4. ***On your frontend terminal run:***
+   - **_`ng serve --open` _**
+
+
+
+#
