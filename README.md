@@ -1,7 +1,5 @@
 # UserDisplay
 User Interface that displays data from an API
-# UserDisplay
-User Interface that displays data from an API
 
 
 
